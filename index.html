@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stratova — Car Studio Management Suite</title>
+<link rel="icon" href="assets/Stratova.jpg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark" data-brand="admin">
+
+<section id="login">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="lwrap">
+    <img class="logo" src="assets/Stratova.jpg" alt="Stratova">
+    <h1 class="grad">STRATOVA</h1>
+    <div class="tag">Car Studio Management Suite &nbsp;·&nbsp; Billing · Jobs · Inventory · Analytics</div>
+    <div class="ws-grid">
+      <div class="ws" data-w="detailing"><div class="img"><img src="assets/Detailingaura.jpg" alt=""></div><h3>Detailing Aura</h3><small>Brand workspace</small></div>
+      <div class="ws" data-w="autostudio"><div class="img"><img src="assets/Auraautostudio.jpg" alt=""></div><h3>Aura Auto Studio</h3><small>Brand workspace</small></div>
+      <div class="ws" data-w="admin"><div class="img"><img src="assets/Stratova.jpg" alt=""></div><h3>Owner Console</h3><small>Combined admin dashboard</small></div>
+    </div>
+    <form id="loginForm" class="hidden" autocomplete="off">
+      <label>Username</label><input id="lu" required autocomplete="off">
+      <div style="height:12px"></div>
+      <label>Password</label><input id="lp" type="password" required autocomplete="off">
+      <button class="btn" type="submit">Sign in</button>
+      <div class="err" id="lerr"></div>
+    </form>
+    <div class="lfoot">Select a workspace to continue &nbsp;·&nbsp; © Stratova</div>
+  </div>
+</section>
+
+<div id="app" class="hidden"></div>
+<div id="modal" class="hidden"><div class="box" id="modalBox"></div></div>
+<div id="toasts"></div>
+<div id="printArea"></div>
+<style id="pageStyle"></style>
+
+<script src="api.js"></script>
+<script src="core.js"></script>
+<script src="brand.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
